@@ -8,28 +8,28 @@
     <link rel="stylesheet" href="custom.css">
 </head>
 <body>
-    <nav class="navbar bg-secondary bg-opacity-25 border-bottom border-3 shadow-lg mb-3"> 
-        <div class="container-fluid d-flex align-items-center flex-nowrap">
-            <div class="navbar-nav me-3">
-                <div class="d-flex flex-row">
-                    <a class="btn btn-primary me-2 px-3" href="Home.html" role="button">Home</a>
-                    <a class="btn btn-outline-primary me-2 px-3" href="About.html" role="button">About</a>
-                    <a class="btn btn-outline-primary me-2 px-3" href="portfolio.html" role="button">Portfolio</a>
-                </div>
-            </div>
-            <a class="navbar-brand p-1 bg-dark bg-opacity-25 rounded border border-dark border-2 border-opacity-50 px-3 d-none d-md-block" >Camerons Portfolio Website</a>
-        </div>
+    <nav class="navbar bg-secondary bg-opacity-25 border-bottom border-3 shadow-lg mb-3 container-fluid d-flex align-items-center flex-nowrap" aria-label="Primary navigation"> 
+        <ul class="navbar-nav me-3 d-flex flex-row list-unstyled mb-0">
+            <li class="nav-item">
+                <a class="btn btn-primary mx-2 px-3" href="Home.html" role="button" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-primary me-2 px-3" href="About.html" role="button">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-primary me-2 px-3" href="portfolio.html" role="button">Portfolio</a>
+            </li>
+        </ul>
+        <a class="navbar-brand p-1 bg-dark bg-opacity-25 rounded border border-dark border-2 border-opacity-50 px-3 d-none d-md-block">Camerons Portfolio Website</a>
     </nav>
     <header>
         <h1 class="text-center container bg-light border border-1 border-light rounded p-3 bg-opacity-25 shadow-md " >Welcome to my Portfolio Website</h1>
     </header>
     <main>
-        <div class="card container shadow-md my-3">
-            <div class="card-body">
-                <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora asperiores doloribus tempore iste doloremque perferendis optio animi, nam dignissimos iure maiores quidem modi quis explicabo ipsam culpa totam vitae deserunt!</p>
-            </div>
-            <div class="card-footer">
-                <div id="demoCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+        <article class="card container shadow-md my-3">
+            <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora asperiores doloribus tempore iste doloremque perferendis optio animi, nam dignissimos iure maiores quidem modi quis explicabo ipsam culpa totam vitae deserunt!</p>
+            <footer class="card-footer">
+                <section id="demoCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="1"></button>
@@ -52,8 +52,10 @@
                     <button class="carousel-control-next" type="button" data-bs-target="#demoCarousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </button>
-                </div>
-            </div>
+                </section>
+            </footer>
+        </article>
+    </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </html>
